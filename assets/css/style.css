@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f7fafc;
+  min-height: 100vh;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  line-height: 135%;
+  font-size: 56px;
+}
+
+h1 .make-bigger {
+  font-size: 140%;
+}
+
+main {
+  background: linear-gradient(45deg, #412999, #6E5BB3);
+  min-width: 1366px;
+  height: calc(768px - 105px);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@media (max-width: 1366px) {
+  main {
+    border-radius: 0px;
+  }
+}
+
+main section {
+  position: relative;
+}
+
+main section #ketupat-1, main section #ketupat-2, main section #ketupat-3 {
+  position: absolute;
+  z-index: 2;
+}
+
+main section #ketupat-1 {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(88%, -25%) rotate(-33deg);
+          transform: translate(88%, -25%) rotate(-33deg);
+  -webkit-animation: up-down 2s infinite alternate ease;
+          animation: up-down 2s infinite alternate ease;
+}
+
+main section #ketupat-2 {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0%, -25%) scale(0.88);
+          transform: translate(0%, -25%) scale(0.88);
+  -webkit-animation: up-down 3s infinite alternate ease;
+          animation: up-down 3s infinite alternate ease;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+main section #ketupat-3 {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: translate(130%, -20%) rotate(-44deg) scale(0.55);
+          transform: translate(130%, -20%) rotate(-44deg) scale(0.55);
+  -webkit-animation: down-up 4s infinite alternate ease;
+          animation: down-up 4s infinite alternate ease;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+@-webkit-keyframes down-up {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -25px;
+  }
+}
+
+@keyframes down-up {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -25px;
+  }
+}
+
+main .hijriah-wrapper {
+  padding: 1rem 2rem;
+  margin-bottom: 36px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3eb2de), to(#FFA43E));
+  background: linear-gradient(0deg, #ff3eb2de, #FFA43E);
+  border-radius: 100px;
+  display: inline-block;
+}
+
+main .hijriah-wrapper h2 {
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 36px;
+}
+
+main .ucapan {
+  margin-bottom: 36px;
+}
+
+main .ucapan p {
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+main .ucapan-dari p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin: 0;
+}
+
+main .img-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+main .img-wrapper .img-item {
+  position: absolute;
+  left: 0;
+  -webkit-transform: scale(1.2) translate(10%, 25%);
+          transform: scale(1.2) translate(10%, 25%);
+}
+/*# sourceMappingURL=style.css.map */

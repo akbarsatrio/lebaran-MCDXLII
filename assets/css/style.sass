@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap')
+
+body
+  font-family: 'Montserrat', sans-serif
+  background: #f7fafc
+  min-height: 100vh
+  color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+h1
+  font-family: 'Berkshire Swash', cursive
+  line-height: 135%
+  font-size: 56px
+  .make-bigger
+    font-size: 140%
+
+main
+  background: linear-gradient(45deg, #412999, #6E5BB3)
+  min-width: 1366px
+  height: calc(768px - 105px)
+  overflow: hidden
+  border-radius: 5px
+  @media ( max-width: 1366px)
+    border-radius: 0px
+  section
+    position: relative
+    #ketupat-1, #ketupat-2, #ketupat-3
+      position: absolute
+      z-index: 2
+    #ketupat-1
+      top: 0
+      left: 0
+      transform: translate(88%, -25%) rotate(-33deg)
+      animation: up-down 2s infinite alternate ease
+    #ketupat-2
+      top: 0
+      left: 0
+      transform: translate(0%, -25%) scale(0.88)
+      animation: up-down 3s infinite alternate ease
+      filter: blur(2px)
+    #ketupat-3
+      bottom: 0
+      left: 0
+      z-index: 1
+      transform: translate(130%, -20%) rotate(-44deg) scale(0.55)
+      animation: down-up 4s infinite alternate ease
+      filter: blur(4px)
+    @keyframes up-down
+      0%
+        top: 0px
+      100%
+        top: 25px
+    @keyframes down-up
+      0%
+        bottom: 0px
+      100%
+        bottom: -25px
+  .hijriah-wrapper
+    padding: 1rem 2rem
+    margin-bottom: 36px
+    background: linear-gradient(0deg, #ff3eb2de, #FFA43E)
+    border-radius: 100px
+    display: inline-block
+    h2
+      font-weight: 800
+      letter-spacing: 3px
+      font-size: 36px
+  .ucapan
+    margin-bottom: 36px
+    p
+      letter-spacing: 2px
+      font-weight: 800
+      font-size: 18px
+  .ucapan-dari
+    p
+      font-size: 12px
+      letter-spacing: 2px
+      font-weight: 800
+      margin: 0
+  .img-wrapper
+    position: relative
+    height: 100%
+    overflow: hidden
+    .img-item
+      position: absolute
+      left: 0
+      transform: scale(1.2) translate(10%, 25%)
